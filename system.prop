@@ -125,3 +125,10 @@ wifi.interface=wlan0
 
 # Enable Power save functionality for modem
 persist.radio.add_power_save=1
+
+# Disable Fast Dormancy due to Windy model
+ro.semc.enable.fast_dormancy=false
+
+# Radio
+ro.radio.noril=true
+rild.libpath=
