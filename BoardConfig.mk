@@ -52,8 +52,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 BOARD_EGL_CFG := device/sony/shinano/rootdir/system/lib/egl/egl.cfg
 
-#BOARD_USES_GENERIC_AUDIO := false
-#BOARD_USES_ALSA_AUDIO := true
+BOARD_USES_ALSA_AUDIO := true
 
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
