@@ -94,3 +94,6 @@ TARGET_SYSTEM_PROP := device/sony/shinano/system.prop
 # NFC
 BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
+
+# Audio HAL
+BOARD_AUDIO_AMPLIFIER := device/sony/shinano/libaudioamp
