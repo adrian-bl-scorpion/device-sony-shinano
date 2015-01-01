@@ -33,9 +33,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 
 BOARD_KERNEL_BOOTIMG := true
-BOARD_CUSTOM_MKBOOTIMG := mkbootimg-caf
+BOARD_CUSTOM_MKBOOTIMG := mkbootimg
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --dt dt.img
+BOARD_MKBOOTIMG_ARGS += --dt out/target/product/scorpion/dt.img
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=shinano user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 selinux=0
 BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
@@ -56,6 +56,10 @@ BOARD_EGL_CFG := device/sony/shinano/rootdir/system/lib/egl/egl.cfg
 #BOARD_USES_ALSA_AUDIO := true
 
 TARGET_USES_ION := true
+TARGET_USES_OVERLAY := true
+TARGET_USES_SF_BYPASS := true
+TARGET_USES_C2D_COMPOSITION := true
+
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Wi-Fi definitions for Broadcom solution

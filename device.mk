@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
     memtrack.msm8974 \
+    copybit.msm8974 \
     libgenlock \
     libqdutils \
     libqdMetaData
@@ -152,6 +153,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     rmt_storage
+
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libdivxdrmdecrypt \
+    libOmxVdec \
+    libOmxVenc \
+    libOmxCore \
+    libstagefrighthw \
+    libc2dcolorconvert
 
 #Charger
 PRODUCT_PACKAGES += \
